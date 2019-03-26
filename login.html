@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SneakPeek</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="text middle" data-text="Welcome to SneakPeek">
+        Welcome to SneakPeek
+    </div>
+
+    <div class="show-login-btn"></i> Click Here </div>
+
+    <div class="login-box">
+    <div class="hide-login-btn"></div>
+    <form class="login-form" action="H1.html" method="post">
+
+      <h1>Login</h1>
+      <input class="txtb" type="text" name="" placeholder="Username">
+      <input class="txtb" type="password" name="" placeholder="Password">
+      <a href="landingpage.html"><input class="login-btn" type="submit" name="" value="Login"></a>
+    </form>
+
+    </div>
+    
+    <script type="text/javascript">
+    $(".show-login-btn").on("click",function(){
+      $(".login-box").toggleClass("showed");
+    });
+    $(".hide-login-btn").on("click",function(){
+      $(".login-box").toggleClass("showed");
+    });
+    </script>
+
+  </body>
+</html>
